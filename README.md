@@ -9,7 +9,7 @@ Hardware security has become increasingly important over the last few years due 
 
 ## CMOS Inverter-Based Ring Oscillator: 
 This basic ring oscillator consists of a loop of CMOS inverters, known for their simple implementation and low power consumption. In Ring Oscillator (RO) Physical Unclonable Functions (PUFs), an array of ring oscillators generates unique device signatures by oscillating at frequencies influenced by small manufacturing variations. Each oscillator's frequency differences yield a unique binary signature for each device, which is consistent but difficult to replicate. Despite their effectiveness, CMOS inverters can be sensitive to environmental changes, such as temperature and voltage variations, affecting performance and PUF reliability.
-         ![image](https://github.com/user-attachments/assets/2a2d019d-1670-4498-90ad-e1e10632c66d)
+                               ![image](https://github.com/user-attachments/assets/2a2d019d-1670-4498-90ad-e1e10632c66d)
 
 ## Design the Ring Oscillator Circuit based PUF:
 A ring oscillator is a circuit with an odd number of inverters connected in a loop, causing continuous oscillation between high and low states. It has no external inputs, but control inputs can be added to enable or disable it. The output is a square wave with a frequency determined by the number of stages and their delay. Design: Connect an odd number of inverters in a loop, feeding the output of the last inverter back to the first, which creates an oscillating signal.
@@ -24,7 +24,7 @@ Clock Signal: Use a stable reference clock (e.g., 1 MHz) for the counting period
 Counting Period: Implement a timer or latch for a fixed period (e.g., 1 second) to measure input pulses.
 Counter Circuit: Use a digital counter (e.g., flip-flops or counter IC) to count pulses within the period.
 Latch & Display: Latch the count at the end of the period, display the result, and reset for the next cycle.
-![image](https://github.com/user-attachments/assets/e68760f8-25b7-4a2b-ae1b-f8cdec834214)
+                                     ![image](https://github.com/user-attachments/assets/e68760f8-25b7-4a2b-ae1b-f8cdec834214)
 
 ## Comparator:
 A comparator compares two input voltages and outputs a binary signal based on which is higher.
