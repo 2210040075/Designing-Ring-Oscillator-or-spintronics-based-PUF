@@ -42,9 +42,13 @@ Hysteresis (optional): Add positive feedback for stability.
   
  ## Advantages of implementing this Ring Oscillator-Based PUF project:
 1.Enhanced Security: Unique device "fingerprints" based on manufacturing variations make the system highly secure and resistant to cloning.
+
 2.High Reliability: Relative frequency comparisons ensure consistent responses despite environmental changes, essential for practical applications.
+
 3.Resource Efficiency: Uses fewer FPGA resources than traditional designs, making it more economical and scalable.
+
 4.Better Scalability: Supports a larger pool of uniquely identifiable devices, ideal for IoT and networked applications.
+
 5.Improved Attack Resistance: More CRPs and randomized responses protect against machine learning attacks.
 # Conclusion
 The proposed RO-PUF demonstrates an improved CRP count and high reliability under environmental fluctuations, providing a robust solution for hardware security. By using relative frequency comparisons, the design maintains response stability, which is crucial for secure device authentication. The FPGA implementation shows that the design achieves improved performance while minimizing resource use.
