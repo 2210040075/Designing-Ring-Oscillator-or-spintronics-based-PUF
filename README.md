@@ -9,7 +9,7 @@ Hardware security has become increasingly important over the last few years due 
 
 ## CMOS Inverter-Based Ring Oscillator: 
 This basic ring oscillator consists of a loop of CMOS inverters, known for their simple implementation and low power consumption. In Ring Oscillator (RO) Physical Unclonable Functions (PUFs), an array of ring oscillators generates unique device signatures by oscillating at frequencies influenced by small manufacturing variations. Each oscillator's frequency differences yield a unique binary signature for each device, which is consistent but difficult to replicate. Despite their effectiveness, CMOS inverters can be sensitive to environmental changes, such as temperature and voltage variations, affecting performance and PUF reliability.
-                               ![image](https://github.com/user-attachments/assets/2a2d019d-1670-4498-90ad-e1e10632c66d)
+![image](https://github.com/user-attachments/assets/2a2d019d-1670-4498-90ad-e1e10632c66d)
 
 ## Design the Ring Oscillator Circuit based PUF:
 A ring oscillator is a circuit with an odd number of inverters connected in a loop, causing continuous oscillation between high and low states. It has no external inputs, but control inputs can be added to enable or disable it. The output is a square wave with a frequency determined by the number of stages and their delay. Design: Connect an odd number of inverters in a loop, feeding the output of the last inverter back to the first, which creates an oscillating signal.
@@ -38,6 +38,8 @@ Output:
 High (e.g., Vcc) if non-inverting input > inverting input.
 Low (e.g., Vee) if inverting input > non-inverting input.
 Hysteresis (optional): Add positive feedback for stability.
+    ![image](https://github.com/user-attachments/assets/0bf39cbd-aa71-4e2c-8906-5314137eda0e)
+
 
 
 
