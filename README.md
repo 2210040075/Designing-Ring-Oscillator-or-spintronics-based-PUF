@@ -14,6 +14,7 @@ This basic ring oscillator consists of a loop of CMOS inverters, known for their
 ## Design the Ring Oscillator Circuit based PUF:
 A ring oscillator is a circuit with an odd number of inverters connected in a loop, causing continuous oscillation between high and low states. It has no external inputs, but control inputs can be added to enable or disable it. The output is a square wave with a frequency determined by the number of stages and their delay. Design: Connect an odd number of inverters in a loop, feeding the output of the last inverter back to the first, which creates an oscillating signal.
 
+
 ## Frequency Counter:
 A frequency counter measures the frequency of an input signal by counting pulses over a set period.
 Inputs: Signal to measure, clock (for timing), and reset (to clear count).
